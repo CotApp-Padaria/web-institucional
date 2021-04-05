@@ -1,0 +1,66 @@
+.title {                  
+    font-size: 8.20vw;     
+}
+
+.subTitle {        
+    font-size: 5vw;
+}
+
+.description {
+    font-size: 2.5vw;
+    line-height: 40px;
+}
+
+.divider {
+    height: 3px !important;
+    opacity: 1;
+}
+
+.background {
+    background-image: url("/images/index/background.jpeg");
+    background-position: top;
+    animation: mymove 100s infinite;
+}
+
+@keyframes mymove {
+    50% {background-position: bottom;}
+}
+
+.stickyWrapper {
+    position: relative;
+    height: 3rem; /* We need to change this value */
+}
+  
+.sticky .sticky-inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {        
+    .customMargin {
+        margin-top: 10rem;
+        margin-bottom: 7rem;
+    }
+}
+
+@media (max-width: 768px) {        
+
+    .title {                  
+        font-size: 60px;    
+    }
+    
+    .subTitle {        
+        font-size: 40px;
+    }
+    
+    .description {    
+        font-size: 20px;    
+    }
+
+    .img {
+        width: 60%;
+    }
+}

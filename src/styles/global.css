@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "QanelasRegular";
+    src: url("/fonts/Qanelas/Qanelas-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-family: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "QanelasBold";
+    src: url("/fonts/Qanelas/Qanelas-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-family: 800;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;  
+    overflow-x: hidden;    
+    /* background: #EBF2F5; */
+}
+
+.sub-header {
+    padding-top: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    cursor: pointer;
+}
+
+.btn-lg {
+    /* font-size: 1em; */
+    padding: 20px 40px;
+    font-weight: bold;
+}
+
+.btn-radius{
+    border-radius: 50px;
+}
+
+.btn-fixed-bottom{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.color-whatsapp {
+    background-color: #25d366;
+    color: white !important;
+}
+
+@media (max-width: 768px) {
+
+    .hidden-sm-down {
+        visibility: hidden;
+        height: 0;
+    }
+}

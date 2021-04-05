@@ -1,0 +1,44 @@
+.welcomeContainer {
+    background-image: linear-gradient(71.21deg, #1E8555 0%, rgba(30, 133, 85, 0.6) 100%);        
+}
+
+.contents {
+    height: calc(100vh - 80px);
+    width: 100vw;
+    padding-top: 5vh;  
+}
+
+.title {                  
+    font-size: 8.20vw;    
+}
+
+.subTitle {        
+    font-size: 3.5vw;
+}
+
+.description {    
+    font-size: 1.8vw;    
+}
+
+.img { 
+    width: 48.6vw;
+}
+
+@media (max-width: 992px) {
+    .welcomeContainer {
+        height: 100%;
+        padding-bottom: 25px;        
+    }    
+
+    .title {                  
+        font-size: 80px;    
+    }
+    
+    .subTitle {        
+        font-size: 40px;
+    }
+    
+    .description {    
+        font-size: 20px;    
+    }
+}

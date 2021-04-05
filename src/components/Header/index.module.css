@@ -1,0 +1,8 @@
+.navbar{
+    padding: 0.5rem 3rem;
+}
+
+.nav>a, .nav>div {
+    margin-left: 10px;
+    margin-right: 10px;
+}
