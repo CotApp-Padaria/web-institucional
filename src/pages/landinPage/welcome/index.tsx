@@ -1,4 +1,5 @@
-import { Button } from 'react-bootstrap';
+import { Button } from '@material-ui/core';
+import Link from 'next/link';
 import styles from './index.module.css';
 
 function Welcome() {
@@ -17,11 +18,13 @@ function Welcome() {
                             de forma intuitiva e segura.
                         </div>
                         <div className="text-center ">
-                            <Button className="btn-lg animate-float" variant="light">
-                                <strong>
-                                    Crie sua conta Grátis!
-                                </strong>
-                            </Button>
+                            <Link href="/options?action=register">
+                                <Button className="animate-float pt-3 pb-3"size="large" variant="contained">
+                                    <strong>
+                                        Crie sua conta Grátis!
+                                    </strong>
+                                </Button>
+                            </Link>
                         </div>                  
                     </div>
                     <div className="hidden-sm-down col-md-6 hidden-sm-down d-flex align-items-center text-center animate-right">

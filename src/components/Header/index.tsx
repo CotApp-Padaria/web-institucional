@@ -1,8 +1,9 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import { Button, Image, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Image, Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 import styles from './index.module.css';
+import { Button } from '@material-ui/core';
 
 function Header() {
 
@@ -60,20 +61,24 @@ function Header() {
                     </Nav>
                     <Nav className="col-md-6">
                         <div className="col">
+
                             <Button 
-                                className="float-end" 
-                                variant="secondary"                                
+                                variant="contained" 
+                                color="secondary"
+                                className="float-end"
                                 onClick={event => handleClickOptions(event, 'register')}
                             >
                                 Cadastro Gratuito
                             </Button>
+
                             <Button 
-                                className="float-end me-3" 
-                                variant="outline-light"                                
+                                variant="outlined"                                
+                                className="float-end me-3"
                                 onClick={event => handleClickOptions(event, 'login')}
                             >
                                 Login
                             </Button>
+                                                        
                         </div>                        
                     </Nav>
                 </Navbar.Collapse>

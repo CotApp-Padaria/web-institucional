@@ -20,6 +20,12 @@
     box-sizing: border-box;
 }
 
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+    transform: translate(14px, -10px) scale(0.75) !important;
+    background-color: white;
+    padding: 0px 5px;
+}
+
 body {
     height: 100vh;  
     overflow-x: hidden;    
@@ -54,10 +60,59 @@ a {
     right: 20px;
 }
 
+
 .color-whatsapp {
     background-color: #25d366;
     color: white !important;
 }
+
+.form-control {    
+    border: 1px solid #704f7d;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgb(112 79 125 / 80%);
+}
+
+.MuiFormControl-root {
+    /* width: 100%; */
+    margin-bottom: 20px !important;
+}
+
+.MuiButton-containedPrimary {
+    background-color: #886099 !important;
+}
+
+.MuiButton-containedPrimary:hover {
+    background-color: #692B84 !important;
+}
+
+.MuiButton-containedSecondary {
+    background-color: #1E8555 !important;
+}
+
+.MuiButton-containedSecondary:hover {
+    background-color: #1a7148 !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #692B84 !important;
+}
+
+.MuiFormLabel-root.Mui-focused {
+    color: #692B84 !important;
+}
+
+.MuiButton-outlined {
+    border: 2px solid rgba(255, 255, 255, 0.5) !important;    
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.MuiButton-outlined:hover {
+    border: 2px solid rgba(255, 255, 255, 1) !important;    
+    color: rgba(255, 255, 255, 1) !important;
+}
+    
 
 @media (max-width: 768px) {
 

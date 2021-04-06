@@ -19,7 +19,7 @@
 .background {
     background-image: url("/images/index/background.jpeg");
     background-position: top;
-    animation: mymove 100s infinite;
+    animation: mymove 500s infinite;
 }
 
 @keyframes mymove {
@@ -41,8 +41,12 @@
 
 @media (min-width: 768px) {        
     .customMargin {
-        margin-top: 10rem;
-        margin-bottom: 7rem;
+        margin-top: -2rem;
+        margin-bottom: 8rem;
+    }
+
+    .img {
+        padding-top: 10vh;
     }
 }
 

@@ -4,7 +4,7 @@ import Footer from '../Footer'
 import Copyright from '../Copyright'
 import WhatsappButton from '../WhatsappButton'
 import Header from '../Header'
-
+  
 type Props = {
   children?: ReactNode
   title?: string
@@ -17,8 +17,7 @@ const Container = (
     title = 'CotApp - O seu lugar de cotar' ,
     hasFooter = true
   }: Props) => (
-
-    <Fragment>
+    
       <div>
         
         <Head>
@@ -39,8 +38,7 @@ const Container = (
 
         <WhatsappButton />
 
-      </div>
-    </Fragment>
+      </div>    
   )
 
 export default Container
