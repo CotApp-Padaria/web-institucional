@@ -52,7 +52,7 @@ function Header() {
                         </Link>
                     </Nav>
                     <Nav className="col-lg-6">
-                        <div className="col align-self-end">
+                        <div className="col">
 
                             <Button 
                                 variant="contained" 
