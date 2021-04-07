@@ -6,6 +6,8 @@ import useForm from './useForm';
 import styles from './index.module.css';
 import { Button, TextField } from '@material-ui/core';
 
+import api from '../../services/api';
+
 function Register() {
         
     const router = useRouter();
@@ -18,9 +20,16 @@ function Register() {
         initialValues: values,
         validationSchema: schemaValidation,
 
-        onSubmit: (values: any) => {
-            alert(JSON.stringify(values, null, 2));
-        },
+        onSubmit: async (values: any) => {
+            api.post('auth/register', values)
+            .then(response => {
+
+            })
+            .catch(e => {
+                console.log('Deu erro')
+                formik.setErrors(e.response.data.error_description)                
+            })            
+        }
 
     });    
 
@@ -28,11 +37,11 @@ function Register() {
 
         <Container>             
 
-            <section className={`container sub-header`}>
+            <section className={`container sub-header ps-3 pe-3`}>
 
                 <div className={`row align-items-center justify-content-center ${styles.rowContainer}`}>
 
-                    <div className="col-md-6">
+                    <div className="col-lg-6 col-md-8">
                         
                         <h1>Registre-se agora!</h1> 
                         <h3>Preencha as informações abaixo.</h3>
@@ -40,7 +49,8 @@ function Register() {
                         <form onSubmit={formik.handleSubmit} className="mt-5">
                             <div className="row">
                                 <div className="col-md-6">
-                                    <TextField 
+                                    <TextField
+                                        autoFocus
                                         fullWidth
                                         id="name"
                                         name="name"

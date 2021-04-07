@@ -68,7 +68,7 @@ function Benefits() {
                             <div className={`${styles.description}`}>
                                 <div>Para o varejista:</div>
                                 <div className="text-primary">
-                                    Ganhe tempo na escolha e cotação dos  produtos
+                                    Faça a melhor cotação de preço dos produtos disponíveis
                                 </div>
                             </div>
                         </ScrollAnimation>
@@ -125,7 +125,7 @@ function Benefits() {
                             <div className={`${styles.description}`}>
                                 <div>Para o varejista:</div>
                                 <div className="text-primary">
-                                    Visualização ampla da cotação de preços de todos os produtos cadastrados
+                                    Disponibilidade de vários produtos em um único canal de cotação
                                 </div>
                             </div>
                         </ScrollAnimation>
@@ -138,7 +138,7 @@ function Benefits() {
                             <div className={`${styles.description}`}>
                                 <div>Para o fornecedor:</div>
                                 <div className="text-primary">
-                                    Cadastro dos produtos em poucos cliques e ampla visibilidade na plataforma
+                                    Cadastro de produtos em poucos cliques e ampla visibilidade na plataforma
                                 </div>
                             </div>
                         </ScrollAnimation>                                            
@@ -151,28 +151,28 @@ function Benefits() {
             </div>
             
             <div>
-                <Sticky enabled={enableSticky} top='#header' bottomBoundary="#agility">                                                    
+                <Sticky enabled={enableSticky} top='#header' bottomBoundary="#productivity">                                                    
                     <ScrollAnimation
                         animateIn='animate__fadeIn'                        
                         animateOnce={true}
                     >                    
                         <div className={`row justify-content-start text-center`}>
                             <div className={`col-md-6`}>
-                                <img src="/gifs/agility.gif" className={`${styles.img} img-fluid`}/>
+                                <img src="/gifs/productivity.gif" className={`${styles.img} img-fluid`}/>
                             </div>
                         </div>
                     </ScrollAnimation>
                 </Sticky>
             </div>
             
-            <div className="container" id="agility">                                    
+            <div className="container" id="productivity">                                    
                 <div className="row justify-content-end">
                     <div className={`${styles.customMargin} fw-bold col-md-6 text-start text-info`}>
                         <ScrollAnimation
                             animateIn='animate__backInRight'
                             animateOnce={true}                                                                        
                         >
-                            <div className={`${styles.subTitle}`}>Agilidade</div>
+                            <div className={`${styles.subTitle}`}>Produtividade</div>
                         </ScrollAnimation>
                         <ScrollAnimation
                             animateIn='animate__bounceIn'
@@ -181,7 +181,7 @@ function Benefits() {
                         >
                             <div className={`${styles.description}`}>                                
                                 <div className="text-primary">
-                                    Acesse cada produto dos fornecedores cadastrados em poucos cliques
+                                    Controle e gerencie seus pedidos online de forma fácil e intuitiva
                                 </div>
                             </div>
                         </ScrollAnimation>                                                                    
@@ -226,7 +226,7 @@ function Benefits() {
                                 <div className="text-primary">
                                     Acesse nossa plataforma e veja 
                                     <span className="text-info"> GRATUITAMENTE </span>
-                                    todos os produtos disponíveis
+                                    tudo o que CotApp pode oferecer
                                 </div>
                             </div>
                         </ScrollAnimation>                                                                    

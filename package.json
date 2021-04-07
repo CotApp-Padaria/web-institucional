@@ -16,6 +16,7 @@
     "@types/react-sticky": "^6.0.3",
     "@types/react-stickynode": "^3.0.1",
     "animate.css": "^4.1.1",
+    "axios": "^0.21.1",
     "bootstrap": "^5.0.0-beta3",
     "formik": "^2.2.6",
     "next": "^10.1.3",

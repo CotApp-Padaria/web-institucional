@@ -1,19 +1,10 @@
 import { FaWhatsapp } from 'react-icons/fa'
 
-type Props = {    
-    phone?: string    
-}
-
-const WhatsappButton = (
-    {       
-        phone = '61981016591'
-    }: 
-    Props
-) => (    
+const WhatsappButton = () => (    
     <div className="btn-fixed-bottom">
         <a 
-            type="button" 
-            href={`https://web.whatsapp.com/send?phone=55${phone}&text=Olá!`}
+            type="button"
+            href={`https://web.whatsapp.com/send?phone=55${process.env.WHATSAPP_NUMBER}&text=Olá, estou interessado em conhecer mais da CotApp.`}
             className="btn color-whatsapp"
             target="_blank"
         >
@@ -22,7 +13,5 @@ const WhatsappButton = (
         </a>
     </div>            
 )
-
-
 
 export default WhatsappButton;

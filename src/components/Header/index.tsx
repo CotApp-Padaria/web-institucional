@@ -12,15 +12,7 @@ function Header() {
     function handleClick(e: any, path: string) {
         e.preventDefault();
         router.push(path);
-    }
-
-    function handleClickOptions(e: any, action: string) {
-        e.preventDefault();
-        router.push({
-            pathname: 'options',
-            query: { action },
-        })        
-    }
+    }    
 
     return (
         <header>            
@@ -66,7 +58,12 @@ function Header() {
                                 variant="contained" 
                                 color="secondary"
                                 className="float-end"
-                                onClick={event => handleClickOptions(event, 'register')}
+                                onClick={() => router.push({
+                                    pathname: 'options',
+                                    query: {
+                                        action: 'register'
+                                    }
+                                })}
                             >
                                 Cadastro Gratuito
                             </Button>
@@ -74,7 +71,12 @@ function Header() {
                             <Button 
                                 variant="outlined"                                
                                 className="float-end me-3"
-                                onClick={event => handleClickOptions(event, 'login')}
+                                onClick={() => router.push({
+                                    pathname: 'options',
+                                    query: {
+                                        action: 'login'
+                                    }
+                                })}
                             >
                                 Login
                             </Button>
