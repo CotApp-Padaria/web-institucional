@@ -29,7 +29,7 @@ function Header() {
                 </Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className={`${styles.nav} col-md-6 fw-bold`}>                        
+                    <Nav className={`${styles.nav} col-lg-6 fw-bold`}>                        
                         <Nav.Link                             
                             onClick={(event: any) => handleClick(event, '/#beneficios')}
                         >
@@ -51,8 +51,8 @@ function Header() {
                             <Nav.Link>Contato</Nav.Link>
                         </Link>
                     </Nav>
-                    <Nav className="col-md-6">
-                        <div className="col">
+                    <Nav className="col-lg-6">
+                        <div className="col align-self-end">
 
                             <Button 
                                 variant="contained" 

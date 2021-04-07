@@ -15,11 +15,17 @@ function Login() {
 
             <section className={`container ${styles.optionsContainer} sub-header`}>                               
                 
+                <h1 className="mt-4">{
+                    action === 'login' ?
+                    'Acesse sua conta' :
+                    'Crie uma conta gratuita'
+                }:</h1> 
+
                 <div className={`row ${styles.rowContainer} align-items-center`}>
 
-                    <div className="col-md-6">
+                    <div className="col-sm-12 col-md-6">
                         <div className="row justify-content-center">
-                            <div className="col-6">
+                            <div className={`col-8 ${styles.btn}`}>
                                 <Link
                                     href={                                        
                                         `${process.env.URL_PATH_PROVIDER}/${action}`
@@ -27,13 +33,9 @@ function Login() {
                                 >
                                     <Paper elevation={3} className={`${styles.card} text-center`}>
                                         <div>
-                                            <img src="/images/buttons/shopper.svg" className={`${styles.img}`}/>
-                                            <h3>{
-                                                action === 'login' ?
-                                                'ACESSE SUA CONTA' :
-                                                'CRIE UMA CONTA GRATUITA'
-                                            }</h3>                   
-                                            <h1 className="font-weight-bold">COMPRADOR</h1>                                        
+                                            <img src="/images/buttons/shopper.svg" className={`${styles.img} mt-4 mb-4`}/>
+                                                              
+                                            <h1 className="font-weight-bold pb-4">COMPRADOR</h1>                                        
                                         </div>                                       
                                     </Paper>
                                 </Link>
@@ -41,9 +43,9 @@ function Login() {
                         </div>
                     </div>
 
-                    <div className="col-md-6">
+                    <div className="col-sm-12 col-md-6">
                         <div className="row justify-content-center">
-                            <div className="col-6">
+                            <div className={`col-8 ${styles.btn}`}>
                                 <Link
                                     href={                                        
                                         `${process.env.URL_PATH_SHOPPER}/${action}`                                        
@@ -51,13 +53,8 @@ function Login() {
                                 >
                                     <Paper elevation={3} className={`${styles.card} text-center`}>
                                         <div>
-                                            <img src="/images/buttons/provider.svg" className={`${styles.img}`}/>
-                                            <h3>{
-                                                action === 'login' ?
-                                                'ACESSE SUA CONTA' :
-                                                'CRIE UMA CONTA GRATUITA'    
-                                            }</h3>
-                                            <h1 className="font-weight-bold">FORNECEDOR</h1>
+                                            <img src="/images/buttons/provider.svg" className={`${styles.img} mt-4 mb-4`}/>                                            
+                                            <h1 className="font-weight-bold pb-4">FORNECEDOR</h1>
                                         </div>                                        
                                     </Paper>
                                 </Link>
