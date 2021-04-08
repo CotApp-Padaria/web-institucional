@@ -28,7 +28,7 @@ function Login() {
                             <div className={`col-8 ${styles.btn}`}>
                                 <Link
                                     href={                                        
-                                        `${process.env.URL_PATH_PROVIDER}/${action}`
+                                        `${process.env.URL_PATH_PROVIDER}/auth/${action}`
                                     }
                                 >
                                     <Paper elevation={3} className={`${styles.card} text-center`}>
@@ -48,7 +48,7 @@ function Login() {
                             <div className={`col-8 ${styles.btn}`}>
                                 <Link
                                     href={                                        
-                                        `${process.env.URL_PATH_SHOPPER}/${action}`                                        
+                                        `${process.env.URL_PATH_SHOPPER}/auth/${action}`                                        
                                     }                                   
                                 >
                                     <Paper elevation={3} className={`${styles.card} text-center`}>
