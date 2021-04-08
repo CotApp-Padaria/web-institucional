@@ -10,7 +10,17 @@ function Welcome() {
             <div className={`container ${styles.contents}`}>
                 <div className="row">
                     <div className="col-md-6 text-light animate-left">
-                        <div className={`${styles.title} fw-bold`}>CotApp</div>
+                        <div className={`${styles.title} fw-bold`}>
+                            <img                                 
+                                src="/images/logos/logo-solido-bold-branco.png"
+                                className="animate-float"
+                                width="150"
+                                alt="Logo da CotApp"
+                            />
+                            <span>
+                                otApp
+                            </span>
+                        </div>
                         <div className={`${styles.subTitle} mb-4`}>A Cotação como deve ser</div>
                         <div className={`${styles.description} mb-5`}>
                             Uma plataforma <strong>GRATUITA</strong> de cotação e gestão de pedidos 
