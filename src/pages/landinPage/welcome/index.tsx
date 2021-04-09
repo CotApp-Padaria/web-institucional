@@ -14,7 +14,7 @@ function Welcome() {
                             <img                                 
                                 src="/images/logos/logo-solido-bold-branco.png"
                                 className="animate-float"
-                                width="150"
+                                width="100vw"
                                 alt="Logo da CotApp"
                             />
                             <span>

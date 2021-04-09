@@ -9,13 +9,15 @@ type Props = {
   children?: ReactNode
   title?: string
   hasFooter?: boolean
+  hasWhatsappButton?: boolean
 }
 
 const Container = (
   { 
     children, 
     title = 'CotApp - O seu lugar de cotar' ,
-    hasFooter = true
+    hasFooter = true,
+    hasWhatsappButton = true
   }: Props) => (
     
       <div>
@@ -36,7 +38,9 @@ const Container = (
         
         <Copyright/> */}
 
-        <WhatsappButton />
+        {hasWhatsappButton &&
+          <WhatsappButton />      
+        }
 
       </div>    
   )
