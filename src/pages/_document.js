@@ -12,7 +12,8 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />            
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+          <link rel="shortcut icon" href="/images/logos/favicon.ico" />            
           <link
             rel="preload"
             href="/fonts/Qanelas/Qanelas-Regular.ttf"
