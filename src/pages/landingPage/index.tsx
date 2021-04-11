@@ -3,7 +3,7 @@ import Container from "../../components/Container";
 import Welcome from "../../components/Index/welcome";
 import Benefits from "../../components/Index/benefits";
 import Register from "../../components/Index/register";
-
+import Features from "../../components/Index/features";
 
 function LandinPage() {
 
@@ -15,6 +15,8 @@ function LandinPage() {
             <Benefits />
 
             <Register />
+
+            <Features />
             
         </Container>     
     );

@@ -35,13 +35,19 @@ function Header() {
                         >
                             Benefícios
                         </Nav.Link>                        
+                        
+                        <Nav.Link                             
+                            onClick={(event: any) => handleClick(event, '/#features')}
+                        >
+                            Funcionalidades
+                        </Nav.Link>                        
 
-                        <NavDropdown title="Funcionalidades" id="collasible-nav-dropdown">
+                        {/* <NavDropdown title="Funcionalidades" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Catálogo online</NavDropdown.Item>                            
                             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                        </NavDropdown>
+                        </NavDropdown> */}
 
                         <Link href="/#equipe">
                             <Nav.Link>Equipe</Nav.Link>

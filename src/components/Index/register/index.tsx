@@ -8,7 +8,7 @@ export default function Register() {
 
     return (
         
-        <section id="register" className={`pt-5 pb-5 ps-1 pe-1`}>
+        <section id="register" className={`pt-5 pb-5 ps-4 pe-4`}>
             
             <div className={`container`}>
 
@@ -17,7 +17,7 @@ export default function Register() {
                         <div className="row justify-content-center">
                             <div className="col-md-12">
                                 <h1 className={`${styles.title} fw-bold text-secondary mt-5 title`}>
-                                    Crie sua conta ainda hoje!
+                                    Crie sua conta agora!
                                 </h1>
                                 <strong className={`${styles.subTitle} text-primary mt-4`}>
                                     Conta grátis, sem mensalidades!
