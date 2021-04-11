@@ -5,7 +5,7 @@ import styles from './index.module.css';
 function Welcome() {
 
     return (
-        <section id="welcome" className={`${styles.welcomeContainer} sub-header`}>            
+        <section id="welcome" className={`${styles.welcomeContainer} sub-header`}>
             
             <div className={`container ${styles.contents}`}>
                 <div className="row">

@@ -17,7 +17,7 @@
 }
 
 .background {
-    background-image: url("/images/index/background.jpeg");
+    background-image: url("/images/index/background.png");
     background-position: top;
     animation: mymove 500s infinite;
 }
@@ -47,6 +47,7 @@
 
     .img {
         padding-top: 10vh;
+        width: 80%;
     }
 }
 

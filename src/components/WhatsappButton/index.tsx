@@ -9,7 +9,7 @@ const WhatsappButton = () => (
             target="_blank"
         >
             <FaWhatsapp size={32} color="#FFF" className="me-1"/>
-            Chat via WhatsApp
+            Fale conosco
         </a>
     </div>            
 )

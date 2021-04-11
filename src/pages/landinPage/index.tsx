@@ -1,7 +1,8 @@
 import React from "react";
 import Container from "../../components/Container";
-import Benefits from "./benefits";
-import Welcome from "./welcome";
+import Welcome from "../../components/Index/welcome";
+import Benefits from "../../components/Index/benefits";
+import Register from "../../components/Index/register";
 
 
 function LandinPage() {
@@ -13,6 +14,8 @@ function LandinPage() {
 
             <Benefits />
 
+            <Register />
+            
         </Container>     
     );
 

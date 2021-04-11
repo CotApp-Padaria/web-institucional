@@ -31,7 +31,7 @@ function Header() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className={`${styles.nav} col-lg-6 fw-bold`}>                        
                         <Nav.Link                             
-                            onClick={(event: any) => handleClick(event, '/#beneficios')}
+                            onClick={(event: any) => handleClick(event, '/#benefits')}
                         >
                             Benefícios
                         </Nav.Link>                        

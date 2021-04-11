@@ -25,7 +25,7 @@ function Benefits() {
 
     return (                
                 
-        <section id="beneficios" className={`${styles.background} pt-5 pb-5`}>                                   
+        <section id="benefits" className={`${styles.background} pt-5 pb-5`}>                                 
 
             <ScrollAnimation
                 animateIn='animate__bounceIn'
@@ -44,7 +44,7 @@ function Benefits() {
                     >                    
                         <div className={`row justify-content-start text-center`}>
                             <div className={`col-md-6`}>
-                                <img src="/gifs/economy.gif" className={`${styles.img} img-fluid`}/>
+                                <img src="/gifs/economy.svg" className={`${styles.img}`}/>
                             </div>
                         </div>
                     </ScrollAnimation>
@@ -78,7 +78,7 @@ function Benefits() {
                             animateOnce={true}                                        
                             delay={400}
                         >
-                            <div className={`${styles.description}`}>
+                            <div className={`${styles.description} mt-4`}>
                                 <div>Para o fornecedor:</div>
                                 <div className="text-primary">
                                     Evite gastos desnecessários com apresentação de seus produtos
@@ -101,7 +101,7 @@ function Benefits() {
                     >                    
                         <div className={`row justify-content-end text-center`}>
                             <div className={`col-md-6`}>
-                                <img src="/gifs/facility.gif" className={`${styles.img} img-fluid`}/>
+                                <img src="/gifs/facility.svg" className={`${styles.img} img-fluid`}/>
                             </div>
                         </div>
                     </ScrollAnimation>
@@ -135,7 +135,7 @@ function Benefits() {
                             animateOnce={true}                                                 
                             delay={400}
                         >
-                            <div className={`${styles.description}`}>
+                            <div className={`${styles.description} mt-4`}>
                                 <div>Para o fornecedor:</div>
                                 <div className="text-primary">
                                     Cadastro de produtos em poucos cliques e ampla visibilidade na plataforma
@@ -158,7 +158,7 @@ function Benefits() {
                     >                    
                         <div className={`row justify-content-start text-center`}>
                             <div className={`col-md-6`}>
-                                <img src="/gifs/productivity.gif" className={`${styles.img} img-fluid`}/>
+                                <img src="/gifs/productivity.svg" className={`${styles.img} img-fluid`}/>
                             </div>
                         </div>
                     </ScrollAnimation>
@@ -201,7 +201,7 @@ function Benefits() {
                     >                    
                         <div className={`row justify-content-end text-center`}>
                             <div className={`col-md-6`}>
-                                <img src="/gifs/gratuity.gif" className={`${styles.img} img-fluid`}/>
+                                <img src="/gifs/gratuity.svg" className={`${styles.img} img-fluid`}/>
                             </div>
                         </div>
                     </ScrollAnimation>
