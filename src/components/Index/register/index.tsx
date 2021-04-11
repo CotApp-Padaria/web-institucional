@@ -12,11 +12,11 @@ export default function Register() {
             
             <div className={`container`}>
 
-                <div className="row">
-                    <div className={`col-md-12 ${styles.banner} text-center`}>
+                <div className="row justify-content-center">
+                    <div className={`col-md-8 ${styles.banner} text-center`}>
                         <div className="row justify-content-center">
                             <div className="col-md-12">
-                                <h1 className={`${styles.title} fw-bold text-secondary mt-5 title`}>
+                                <h1 className={`${styles.title} fw-bold text-secondary mt-3 title`}>
                                     Crie sua conta agora!
                                 </h1>
                                 <strong className={`${styles.subTitle} text-primary mt-4`}>
@@ -33,12 +33,12 @@ export default function Register() {
                                 </p>
                             </div>
 
-                            <div className="col-xs-8 col-sm-8 col-md-4 mt-4 mb-5 ">
+                            <div className="col-sm-8 col-md-6 mt-3 mb-4 ">
                                 <Button
                                     fullWidth
                                     variant="contained" 
                                     color="secondary"
-                                    className="float-end pt-4 pb-4 fs-5"
+                                    className="float-end fs-5"
                                     onClick={() => router.push({
                                         pathname: 'options',
                                         query: {

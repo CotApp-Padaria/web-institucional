@@ -5,19 +5,19 @@
 }
 
 .title {                  
-    font-size: 5vw;     
+    font-size: 4vw;     
 }
 
 .subTitle {        
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .description {
-    font-size: 2.5vw;
-    line-height: 2vw;    
+    font-size: 1.5vw;
+    line-height: 1vw;    
 }
 
-@media (max-width: 768px) {        
+@media (max-width: 1128px) {        
 
     .title {                  
         font-size: 35px;    
