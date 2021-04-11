@@ -60,6 +60,10 @@ a {
     right: 20px;
 }
 
+.cursor-pointer:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 .color-whatsapp {
     background-color: #25d366;

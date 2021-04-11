@@ -12,6 +12,7 @@ function Login() {
 
     return (
         <Container
+            hasFooter = {false}
             hasWhatsappButton = {false}
         >             
 

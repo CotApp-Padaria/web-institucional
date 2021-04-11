@@ -1,6 +1,6 @@
 
 .banner {
-    box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
 }
 
@@ -10,17 +10,17 @@
 }
 
 .title {                  
-    font-size: 5vw;   
-    line-height: 4.5vw;      
+    font-size: 4vw;   
+    line-height: 3.5vw;      
 }
 
 .subTitle {        
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .description {
-    font-size: 2.5vw;
-    line-height: 3vw;    
+    font-size: 1.5vw;
+    line-height: 2vw;    
 }
 
 .displayFlex {
@@ -35,16 +35,16 @@
 }
 
 .eachSlide { 
-    padding: 7rem 2rem;    
+    padding: 7rem 2rem 0;    
 }
 
-@media (min-width: 768px) {        
+@media (min-width: 1128px) {        
     .marginComputer {
         margin: 3rem 0;
     }
 }
 
-@media (max-width: 768px) {        
+@media (max-width: 1128px) {        
 
     .title {                  
         font-size: 35px;  

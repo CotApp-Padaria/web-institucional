@@ -6,12 +6,12 @@ export default function Computer() {
             
         <div className={`container`}>
 
-            <div className="row">
-                <div className={`col-md- ${styles.banner}`}>
+            <div className="row justify-content-center">
+                <div className={`col-md-10 ${styles.banner}`}>
                     <div className="row p-4">
                         <div className={`col-md-12 ${styles.bannerContainer}`}>
                             <div className="row align-items-center">
-                                <div className={`col-md-6 p-4 animate-float ${styles.marginComputer}`}>
+                                <div className={`col-md-5 p-4 ${styles.marginComputer}`}>
                                     <h1 className={`${styles.title} fw-bold text-secondary title`}>
                                         Competitivo em todos os aspectos
                                     </h1>                                    
@@ -20,7 +20,7 @@ export default function Computer() {
                                         de que está obtendo o melhor preço possível.
                                     </p>                                        
                                 </div>
-                                <div className={`col-md-6 text-center mt-0`}>
+                                <div className={`col-md-7 text-center mt-0`}>
                                     <img                                 
                                         src="/images/index/computer.png"
                                         className={`animate-float ${styles.imgComputer}`}                                        

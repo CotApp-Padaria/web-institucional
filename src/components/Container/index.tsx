@@ -32,11 +32,13 @@ const Container = (
 
         {children}
 
-        {/* {hasFooter && 
-          <Footer />      
-        }
-        
-        <Copyright/> */}
+        {
+          hasFooter &&
+          <div>
+            {/* <Footer />   */}
+            <Copyright />          
+          </div>
+        }              
 
         {hasWhatsappButton &&
           <WhatsappButton />      

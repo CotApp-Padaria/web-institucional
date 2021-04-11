@@ -6,8 +6,8 @@ export default function Tablet() {
             
         <div className={`container`}>
 
-            <div className="row">
-                <div className={`col-md- ${styles.banner}`}>
+            <div className="row justify-content-center">
+                <div className={`col-md-10 ${styles.banner}`}>
                     <div className="row p-4">
                         <div className={`col-md-12 ${styles.bannerContainer}`}>
                             <div className="row align-items-center">

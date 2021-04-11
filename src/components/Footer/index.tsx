@@ -6,13 +6,7 @@ function Footer() {
     return (
         <footer className={styles.footerContainer}>      
             <div className={styles.footerContato}>                
-                {/* <Image 
-                    className={styles.logo}
-                    src="/images/brand-colorful.png"
-                    alt="Logomarca da CotApp"
-                    width=""
-                    height=""
-                />                 */}
+                
             </div>
             <div className={styles.footerInstitucional}>
                 <h3>Institucional</h3>
