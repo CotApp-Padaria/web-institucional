@@ -1,27 +1,7 @@
-// import { Image } from 'react-bootstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Sticky from 'react-stickynode';
-import { useEffect, useState } from 'react';
 import styles from './index.module.css';
 
-function Benefits() {        
-
-    const [enableSticky, setEnableSticky] = useState(true);
-
-    useEffect(() => {
-       window.innerWidth < 768 ?
-        setEnableSticky(false) :
-        setEnableSticky(true)
-    }, []); 
-
-    useEffect(() => {
-        const handleResize = () => {
-            window.innerWidth < 768 ?
-            setEnableSticky(false) :
-            setEnableSticky(true)
-        }
-        window.addEventListener("resize", handleResize);        
-    });
+function Benefits() {               
 
     return (                
                 
