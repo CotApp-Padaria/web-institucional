@@ -3,7 +3,7 @@ import styles from './index.module.css';
 
 function Copyright() {
     return (
-        <div className={`row ${styles.copyrightContainer} text-light align-items-center p-3`}>
+        <div className={`row ${styles.copyrightContainer} text-light align-items-center p-3 fw-bold`}>
             <div className="col-md-6">
                 <p className="">
                     © Copyright 2021 - CotApp - Todos os direitos reservados CotApp com Agência de Cotação Alimentar Online S.A.
@@ -11,7 +11,7 @@ function Copyright() {
                     Brasília/DF - CEP 00.000-000
                 </p>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 fs-6">
                 <Link href="/terms">
                     <span className="text-light cursor-pointer me-3">
                         Termos e condições de uso

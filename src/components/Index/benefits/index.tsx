@@ -30,209 +30,200 @@ function Benefits() {
             <ScrollAnimation
                 animateIn='animate__bounceIn'
                 animateOnce={true}               
-            >
-                <div className="row">
-                    <p className={`${styles.title} fw-bold text-center text.primary`}>Benefícios</p>
-                </div>
+            >                
+                <h1 className={`${styles.pageTitle} fw-bold text-center text-primary`}>
+                    Benefícios
+                </h1>                
             </ScrollAnimation>            
-
-            <div>
-                <Sticky enabled={enableSticky} top='#header' bottomBoundary="#economy">                                
-                    <ScrollAnimation
-                        animateIn='animate__fadeIn'
-                        animateOnce={true}
-                    >                    
-                        <div className={`row justify-content-start text-center`}>
-                            <div className={`col-md-6`}>
-                                <img src="/gifs/economy.svg" className={`${styles.img}`}/>
-                            </div>
-                        </div>
-                    </ScrollAnimation>
-                </Sticky>
-            </div>            
             
-            <div className="container" id="economy">
-                <div className="row justify-content-end">
-                    <div className={`${styles.customMargin} fw-bold col-md-6 text-start text-info`}>
+            <div className="container mt-4">
+
+                <div className="row align-items-center">
+                    <div className={`col-md-6 text-center`}>
+                        <ScrollAnimation
+                            animateIn='animate__fadeIn'
+                            animateOnce={true}
+                        >                    
+                            <img src="/gifs/economy.svg" className={`${styles.img}`}/>
+                        </ScrollAnimation>
+                    </div>
+
+                    <div className="col-md-6">
                         <ScrollAnimation
                             animateIn='animate__backInRight'
                             animateOnce={true}                                                                        
                         >
-                            <div className={`${styles.subTitle}`}>Economia</div>
+                            <h1 className={`${styles.title} fw-bold text-primary`}>
+                                Economia
+                            </h1>
                         </ScrollAnimation>
                         <ScrollAnimation
                             animateIn='animate__bounceIn'
-                            animateOnce={true}                                               
-                            delay={500}
-                        >
-                            <div className={`${styles.description}`}>
-                                <div>Para o varejista:</div>
-                                <div className="text-primary">
-                                    Faça a melhor cotação de preço dos produtos disponíveis
-                                </div>
-                            </div>
+                            animateOnce={true}                                                                           
+                        >                        
+                            <strong className={`${styles.subTitle} text-info`}>
+                                Para o varejista:
+                            </strong>
+                            <p className={`${styles.description}`}>
+                                Faça a melhor cotação de preço dos produtos disponíveis
+                            </p>                        
                         </ScrollAnimation>
 
                         <ScrollAnimation
                             animateIn='animate__bounceIn'
-                            animateOnce={true}                                        
-                            delay={400}
+                            animateOnce={true}                                                                    
                         >
-                            <div className={`${styles.description} mt-4`}>
-                                <div>Para o fornecedor:</div>
-                                <div className="text-primary">
-                                    Evite gastos desnecessários com apresentação de seus produtos
-                                </div>
-                            </div>
-                        </ScrollAnimation>                                            
+                            <strong className={`${styles.subTitle} text-info`}>
+                                Para o fornecedor:
+                            </strong>
+                            <p className={`${styles.description}`}>
+                                Evite gastos desnecessários com apresentação de seus produtos
+                            </p>                        
+                        </ScrollAnimation>
                     </div>
-                </div>
-            </div>
-                                     
-            <div className="container">
-                <hr className={styles.divider}/>
+                </div>                                                 
+            
+                <ScrollAnimation
+                    animateIn='animate__backInRight'
+                    animateOnce={true}                                                                        
+                >
+                    <hr className={styles.divider}/>
+                </ScrollAnimation>
+
             </div>                                             
             
-            <div>
-                <Sticky enabled={enableSticky} top='#header' bottomBoundary="#facility">                                    
-                    <ScrollAnimation
-                        animateIn='animate__fadeIn'
-                        animateOnce={true}
-                    >                    
-                        <div className={`row justify-content-end text-center`}>
-                            <div className={`col-md-6`}>
-                                <img src="/gifs/facility.svg" className={`${styles.img} img-fluid`}/>
-                            </div>
-                        </div>
-                    </ScrollAnimation>
-                </Sticky>                            
-            </div>
+            <div className="container mt-4">
 
-            <div className="container" id="facility">
-                <div className="row justify-content-start">
-                    <div className={`${styles.customMargin} fw-bold col-md-6 text-end text-info`}>
+                <div className="row align-items-center">                    
+                    <div className="col-md-6 text-end order-md-first order-last">
                         <ScrollAnimation
                             animateIn='animate__backInLeft'
-                            animateOnce={true}
+                            animateOnce={true}                                                                        
                         >
-                            <div className={`${styles.subTitle}`}>Facilidade</div>
+                            <h1 className={`${styles.title} fw-bold text-primary`}>
+                                Facilidade
+                            </h1>
                         </ScrollAnimation>
                         <ScrollAnimation
                             animateIn='animate__bounceIn'
-                            animateOnce={true}                                                
-                            delay={500}
-                        >
-                            <div className={`${styles.description}`}>
-                                <div>Para o varejista:</div>
-                                <div className="text-primary">
-                                    Disponibilidade de vários produtos em um único canal de cotação
-                                </div>
-                            </div>
+                            animateOnce={true}                                                                           
+                        >                        
+                            <strong className={`${styles.subTitle} text-info`}>
+                                Para o varejista:
+                            </strong>
+                            <p className={`${styles.description}`}>
+                                Disponibilidade de vários produtos em um único canal de cotação
+                            </p>                        
                         </ScrollAnimation>
 
                         <ScrollAnimation
                             animateIn='animate__bounceIn'
-                            animateOnce={true}                                                 
-                            delay={400}
+                            animateOnce={true}                            
                         >
-                            <div className={`${styles.description} mt-4`}>
-                                <div>Para o fornecedor:</div>
-                                <div className="text-primary">
-                                    Cadastro de produtos em poucos cliques e ampla visibilidade na plataforma
-                                </div>
-                            </div>
-                        </ScrollAnimation>                                            
+                            <strong className={`${styles.subTitle} text-info`}>
+                                Para o fornecedor:
+                            </strong>
+                            <p className={`${styles.description}`}>
+                                Cadastro de produtos em poucos cliques e ampla visibilidade na plataforma
+                            </p>                        
+                        </ScrollAnimation>
                     </div>
-                </div>
-            </div>
+
+                    <div className={`col-md-6 text-center order-md-last order-first`}>
+                        <ScrollAnimation
+                            animateIn='animate__fadeIn'
+                            animateOnce={true}
+                        >                    
+                            <img src="/gifs/facility.svg" className={`${styles.img}`}/>
+                        </ScrollAnimation>
+                    </div>
+                </div>                                                 
             
-            <div className="container">
-                <hr className={styles.divider}/>
-            </div>
-            
-            <div>
-                <Sticky enabled={enableSticky} top='#header' bottomBoundary="#productivity">                                                    
-                    <ScrollAnimation
-                        animateIn='animate__fadeIn'                        
-                        animateOnce={true}
-                    >                    
-                        <div className={`row justify-content-start text-center`}>
-                            <div className={`col-md-6`}>
-                                <img src="/gifs/productivity.svg" className={`${styles.img} img-fluid`}/>
-                            </div>
-                        </div>
-                    </ScrollAnimation>
-                </Sticky>
-            </div>
-            
-            <div className="container" id="productivity">                                    
-                <div className="row justify-content-end">
-                    <div className={`${styles.customMargin} fw-bold col-md-6 text-start text-info`}>
+                <ScrollAnimation
+                    animateIn='animate__backInLeft'
+                    animateOnce={true}                                                                        
+                >
+                    <hr className={styles.divider}/>
+                </ScrollAnimation>
+
+            </div> 
+
+            <div className="container mt-4">
+
+                <div className="row align-items-center">
+                    <div className={`col-md-6 text-center`}>
+                        <ScrollAnimation
+                            animateIn='animate__fadeIn'
+                            animateOnce={true}
+                        >                    
+                            <img src="/gifs/productivity.svg" className={`${styles.img}`}/>
+                        </ScrollAnimation>
+                    </div>
+
+                    <div className="col-md-6">
                         <ScrollAnimation
                             animateIn='animate__backInRight'
                             animateOnce={true}                                                                        
                         >
-                            <div className={`${styles.subTitle}`}>Produtividade</div>
+                            <h1 className={`${styles.title} fw-bold text-primary`}>
+                                Produtividade
+                            </h1>
                         </ScrollAnimation>
                         <ScrollAnimation
                             animateIn='animate__bounceIn'
-                            animateOnce={true}                                                 
-                            delay={500}
-                        >
-                            <div className={`${styles.description}`}>                                
-                                <div className="text-primary">
-                                    Controle e gerencie seus pedidos online de forma fácil e intuitiva
-                                </div>
-                            </div>
-                        </ScrollAnimation>                                                                    
+                            animateOnce={true}                                                                           
+                        >                        
+                            <p className={`${styles.description}`}>
+                                Controle e gerencie seus pedidos online de forma fácil e intuitiva
+                            </p>                        
+                        </ScrollAnimation>                       
                     </div>
-                </div>
-            </div>
-            
-            <div className="container">
-                <hr className={styles.divider}/>
-            </div>
-            
-            <div>
-                <Sticky enabled={enableSticky} top='#header' bottomBoundary="#gratuity">                    
-                    <ScrollAnimation
-                        animateIn='animate__fadeIn'                        
-                        animateOnce={true}
-                    >                    
-                        <div className={`row justify-content-end text-center`}>
-                            <div className={`col-md-6`}>
-                                <img src="/gifs/gratuity.svg" className={`${styles.img} img-fluid`}/>
-                            </div>
-                        </div>
-                    </ScrollAnimation>
-                </Sticky>
+                </div>                                                 
+
+                <ScrollAnimation
+                    animateIn='animate__backInRight'
+                    animateOnce={true}                                                                        
+                >
+                    <hr className={styles.divider}/>
+                </ScrollAnimation>
+
             </div>
 
-            <div className="container" id="gratuity">
-                <div className="row justify-content-start">
-                    <div className={`${styles.customMargin} fw-bold col-md-6 text-end text-info`}>
+            <div className="container mt-4">
+
+                <div className="row align-items-center">                    
+                    <div className="col-md-6 text-end order-md-first order-last">
                         <ScrollAnimation
-                            animateIn='animate__backInLeft'
-                            animateOnce={true}
-                        >
-                            <div className={`${styles.subTitle}`}>Gratuidade</div>
+                           animateIn='animate__backInLeft'
+                            animateOnce={true}                                                                        
+                        > 
+                            <h1 className={`${styles.title} fw-bold text-primary`}>
+                                Gratuidade
+                            </h1>
                         </ScrollAnimation>
                         <ScrollAnimation
                             animateIn='animate__bounceIn'
-                            animateOnce={true}                                                
-                            delay={500}
-                        >
-                            <div className={`${styles.description}`}>                                
-                                <div className="text-primary">
-                                    Acesse nossa plataforma e veja 
-                                    <span className="text-info"> GRATUITAMENTE </span>
-                                    tudo o que CotApp pode oferecer
-                                </div>
-                            </div>
-                        </ScrollAnimation>                                                                    
+                            animateOnce={true}                                                                           
+                        >                                                    
+                            <p className={`${styles.description}`}>
+                                Acesse nossa plataforma e veja 
+                                <span className="text-info"> GRATUITAMENTE </span>
+                                tudo o que CotApp pode oferecer
+                            </p>                        
+                        </ScrollAnimation>                       
                     </div>
-                </div>
-            </div>                                                         
+
+                    <div className={`col-md-6 text-center order-md-last order-first`}>
+                        <ScrollAnimation
+                            animateIn='animate__fadeIn'
+                            animateOnce={true}
+                        >                    
+                            <img src="/gifs/gratuity.svg" className={`${styles.img}`}/>
+                        </ScrollAnimation>
+                    </div>
+                </div>                            
+
+            </div>                                                                                
 
         </section>        
         
