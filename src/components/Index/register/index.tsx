@@ -23,10 +23,10 @@ export default function Register() {
                                     Conta grátis, sem mensalidades!
                                 </strong>
                                 <p className={`${styles.description} mt-4`}>
-                                    Crie uma conta gratuita hoje e descubra como
+                                    Crie uma conta gratuita hoje e descubra 
                                 </p>
-                                <p className={`${styles.description}`}>
-                                    você pode economizar tempo e dinheito.
+                                <p className={`${styles.description}`}>                                    
+                                    como economizar tempo e dinheiro.
                                 </p>
                                 <p className={`${styles.description}`}>
                                     Você só tem a ganhar, aproveite!
