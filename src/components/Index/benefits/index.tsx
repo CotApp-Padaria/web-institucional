@@ -5,16 +5,7 @@ function Benefits() {
 
     return (                
                 
-        <section id="benefits" className={`${styles.background} pt-5 pb-5`}>                                 
-
-            <ScrollAnimation
-                animateIn='animate__bounceIn'
-                animateOnce={true}               
-            >                
-                <h1 className={`${styles.pageTitle} fw-bold text-center text-primary`}>
-                    Benefícios
-                </h1>                
-            </ScrollAnimation>            
+        <section id="benefits" className={`${styles.background} pt-5 pb-5`}>                                             
             
             <div className="container mt-4">
 
