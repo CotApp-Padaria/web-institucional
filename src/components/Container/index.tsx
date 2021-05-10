@@ -1,9 +1,8 @@
-import React, { Fragment, ReactNode } from 'react'
 import Head from 'next/head'
-import Footer from '../Footer'
+import React, { ReactNode } from 'react'
 import Copyright from '../Copyright'
-import WhatsappButton from '../WhatsappButton'
 import Header from '../Header'
+import WhatsappButton from '../WhatsappButton'
   
 type Props = {
   children?: ReactNode
