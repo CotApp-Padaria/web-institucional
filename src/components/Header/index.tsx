@@ -15,7 +15,7 @@ function Header() {
     }    
 
     return (
-        <header>            
+        <header className={styles.header}>            
             <Navbar id="header" fixed="top" className={styles.navbar} collapseOnSelect expand="lg" bg="primary" variant="dark">
                 <Link href="/#welcome">
                     <Navbar.Brand>
@@ -37,25 +37,30 @@ function Header() {
                         </Nav.Link>                        
                         
                         <Nav.Link                             
-                            onClick={(event: any) => handleClick(event, '/#features')}
+                            onClick={(event: any) => handleClick(event, '/#shopper')}
                         >
-                            Funcionalidades
+                            Compradores
                         </Nav.Link>                        
+                        
+                        <Nav.Link                             
+                            onClick={(event: any) => handleClick(event, '/#provider')}
+                        >
+                            Fornecedores
+                        </Nav.Link>
 
                         {/* <NavDropdown title="Funcionalidades" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Catálogo online</NavDropdown.Item>                            
                             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                        </NavDropdown> */}
+                        </NavDropdown> */}                        
 
-                        <Link href="/#equipe">
-                            <Nav.Link>Equipe</Nav.Link>
-                        </Link>
-
-                        <Link href="/#contato">
-                            <Nav.Link>Contato</Nav.Link>
-                        </Link>
+                        <Nav.Link                             
+                            onClick={(event: any) => handleClick(event, '/#contact')}
+                        >
+                            Contato
+                        </Nav.Link>
+                        
                     </Nav>
                     <Nav className="col-lg-6">
                         <div className="col">
@@ -74,18 +79,21 @@ function Header() {
                                 Cadastro Gratuito
                             </Button>
 
-                            <Button 
-                                variant="outlined"                                
-                                className="float-end me-3"
-                                onClick={() => router.push({
-                                    pathname: 'options',
-                                    query: {
-                                        action: 'login'
-                                    }
-                                })}
-                            >
-                                Login
-                            </Button>
+                            {
+                                false &&
+                                <Button 
+                                    variant="outlined"                                
+                                    className="float-end me-3"
+                                    onClick={() => router.push({
+                                        pathname: 'options',
+                                        query: {
+                                            action: 'login'
+                                        }
+                                    })}
+                                >
+                                    Login
+                                </Button>
+                            }
                                                         
                         </div>                        
                     </Nav>

@@ -14,12 +14,6 @@
     font-display: swap;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .MuiInputLabel-outlined.MuiInputLabel-shrink {
     transform: translate(14px, -10px) scale(0.75) !important;
     background-color: white;
@@ -27,9 +21,7 @@
 }
 
 body {
-    height: 100vh;  
-    overflow-x: hidden;    
-    /* background: #EBF2F5; */
+    height: 100vh;        
 }
 
 .sub-header {
@@ -58,6 +50,7 @@ a {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 1;
 }
 
 .cursor-pointer:hover {
@@ -105,17 +98,7 @@ a {
 
 .MuiFormLabel-root.Mui-focused {
     color: #692B84 !important;
-}
-
-.MuiButton-outlined {
-    border: 2px solid rgba(255, 255, 255, 0.5) !important;    
-    color: rgba(255, 255, 255, 0.8) !important;
-}
-
-.MuiButton-outlined:hover {
-    border: 2px solid rgba(255, 255, 255, 1) !important;    
-    color: rgba(255, 255, 255, 1) !important;
-}  
+} 
 
 @media (max-width: 768px) {
 

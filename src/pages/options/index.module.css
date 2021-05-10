@@ -1,6 +1,5 @@
-
-.rowContainer {
-    height: calc(100vh - 160px);
+.optionsContainer {
+    min-height: calc(100vh - 80px);
 }
 
 .card {
@@ -18,4 +17,8 @@
 
 .img {
     height: 20vh;
+}
+
+.imgWorking {
+    height: 50vh;
 }

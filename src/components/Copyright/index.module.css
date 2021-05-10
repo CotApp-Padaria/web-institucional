@@ -1,5 +1,7 @@
-.copyrightContainer {
-    font-size: 13px;
-    background-color: #692B84 ;
-    line-height: 18px;
+.title {        
+    font-size: 65px;    
+}
+
+.copyrightContainer {    
+    background-color: #692B84;       
 }

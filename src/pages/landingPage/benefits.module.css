@@ -3,7 +3,7 @@
 }
 
 .title {                  
-    font-size: 4vw;       
+    font-size: 3.5vw;       
 }
 
 .subTitle {        
@@ -11,8 +11,8 @@
 }
 
 .description {
-    font-size: 1.5vw;
-    line-height: 2vw;    
+    font-size: 1.5em;
+    line-height: 2rem;    
 }
 
 .divider {
@@ -24,6 +24,12 @@
     background-image: url("/images/index/background.png");
     background-position: top;
     animation: mymove 500s infinite;
+}
+
+.img {
+    max-height: 250px;
+    border-radius: 20px;
+    border: 2px solid #886099;
 }
 
 @keyframes mymove {
@@ -43,26 +49,6 @@
     z-index: 1;
 }
 
-@media (max-width: 1128px) { 
-    
-    .pageTitle {                  
-        font-size: 80px
-    }
-
-    .title {                  
-        font-size: 60px;    
-    }
-    
-    .subTitle {        
-        font-size: 40px;
-    }
-    
-    .description {    
-        font-size: 20px;
-        line-height: 20px;   
-    }
-    
-}
 
 @media (max-width: 768px) {
 
@@ -71,14 +57,16 @@
     }
 
     .title {                  
-        font-size: 50px;    
+        font-size: 40px;    
     }
     
     .subTitle {        
         font-size: 30px;
     }
 
-    .img {
-        width: 50vw;
+    .description {    
+        font-size: 20px;
+        line-height: 25px;   
     }
+   
 }
