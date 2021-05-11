@@ -1,11 +1,8 @@
 import { Button } from '@material-ui/core';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import styles from './destaque.module.css';
 
-export default function destaqueSaibaMais() {
-
-    const router = useRouter();  
+export default function destaqueSaibaMais() {    
 
     return (
         
