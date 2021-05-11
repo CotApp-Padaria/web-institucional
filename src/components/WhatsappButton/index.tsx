@@ -1,4 +1,4 @@
-import { FaWhatsapp } from 'react-icons/fa'
+import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsappButton = () => (    
     <div className="btn-fixed-bottom">

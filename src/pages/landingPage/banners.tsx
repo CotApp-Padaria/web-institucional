@@ -1,6 +1,6 @@
-import DestaqueSaibaMais from "./destaqueSaibaMais";
-import DestaqueBeneficios from "./destaqueBeneficios";
 import styles from './banners.module.css';
+import DestaqueBeneficios from "./destaqueBeneficios";
+import DestaqueSaibaMais from "./destaqueSaibaMais";
 
 export default function Banners() {  
 

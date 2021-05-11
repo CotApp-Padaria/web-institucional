@@ -1,9 +1,9 @@
-import { useRouter } from 'next/router';
-import Link from 'next/link';
-import { Image, Nav, Navbar, NavDropdown } from "react-bootstrap";
-
-import styles from './index.module.css';
 import { Button } from '@material-ui/core';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { Image, Nav, Navbar } from "react-bootstrap";
+import styles from './index.module.css';
+
 
 function Header() {
 
