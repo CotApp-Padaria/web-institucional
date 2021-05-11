@@ -1,23 +1,11 @@
 import { Button } from '@material-ui/core';
 import Link from 'next/link';
 import React from 'react';
-import ScrollAnimation from '../../utils/Types/ScrollAnimation';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import styles from './welcome.module.css';
 
-function Welcome() {        
-
-    async function pulse() {
-        if(document.getElementsByClassName("ccotapp").length > 0){
-            await document.getElementsByClassName("ccotapp")[0].classList.remove('animate__pulse');
-            setTimeout(async () => {            
-                await document.getElementsByClassName("ccotapp")[0].classList.add('animate__pulse');
-                setTimeout(async () => {                 
-                    pulse();
-                } , 1000);
-            }, 500);
-        }
-    }
+function Welcome() {            
 
     return (
         <section id="welcome" className={`${styles.welcomeContainer} sub-header`}>                        
@@ -32,8 +20,7 @@ function Welcome() {
                             <div className={`${styles.title} fw-bold`}>
                                 <ScrollAnimation
                                     animateIn='animate__pulse'
-                                    animateOnce={true}
-                                    afterAnimatedIn={() => pulse()}
+                                    animateOnce={true}                                                                       
                                     className="ccotapp"
                                 > 
                                     <img                                 

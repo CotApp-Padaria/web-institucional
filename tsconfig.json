@@ -13,11 +13,15 @@
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "typeRoots": [
+      "src/customTypings",
+      "node_modules/@types"
+    ]
   },
   "exclude": ["node_modules"],
   "include": ["**/*.ts", "**/*.tsx", "pages/_app.js", "next.config.js"]
