@@ -1,9 +1,11 @@
 import { Button } from '@material-ui/core';
 import Link from 'next/link';
-import ScrollAnimation from 'react-animate-on-scroll';
+import React from 'react';
+import ScrollAnimation from '../../utils/Types/ScrollAnimation';
+
 import styles from './welcome.module.css';
 
-function Welcome() {
+function Welcome() {        
 
     async function pulse() {
         if(document.getElementsByClassName("ccotapp").length > 0){
@@ -31,9 +33,7 @@ function Welcome() {
                                 <ScrollAnimation
                                     animateIn='animate__pulse'
                                     animateOnce={true}
-                                    afterAnimatedIn={() => {                                        
-                                        pulse();
-                                    }}
+                                    afterAnimatedIn={() => pulse()}
                                     className="ccotapp"
                                 > 
                                     <img                                 
