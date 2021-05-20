@@ -21,13 +21,11 @@
 }
 
 .subTitle {        
-    font-size: 3.5vw;
+    font-size: 3.2vw;
 }
 
 .description {    
-    font-size: 1.8vw;
-    /* width: 80%;
-    padding-left: 20%; */
+    font-size: 1.8vw;    
 }
 
 .imgBg {
@@ -68,4 +66,23 @@
         font-size: 20px;    
     }        
     
+}
+
+@media (min-width: 1400px) {  
+    .contents {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    
+    .title {                  
+        font-size: 125px;
+    }
+    
+    .subTitle {        
+        font-size: 54px;
+    }
+    
+    .description {    
+        font-size: 28px;    
+    } 
 }
